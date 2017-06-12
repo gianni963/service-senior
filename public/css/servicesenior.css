@@ -1,0 +1,123 @@
+p,h1,h2,h3,h4{
+	font-family : Montserrat,sans-serif  !important;
+  color :#666667 !important;
+}
+
+p{
+	font-size:14px !important;
+}
+body{
+  background-color: #FFFFFF ;
+}
+.navbar-default{
+  background-color : #19272D !important;
+}
+.navbar-default .navbar-nav > li > a{
+
+  color: #FFFFFF !important;
+}
+.navbar-default .navbar-brand{
+   color: #FFFFFF !important;
+}
+
+.dropdown-menu {
+  background-color : #19272D!important;
+}
+.dropdown-menu > li > a{
+    color: #FFFFFF !important;
+
+}
+.dropdown-menu > li > a:hover{
+  background-color : #19272D!important;
+  color:  #FFFFFF !important;
+}
+navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover
+{
+   background-color : #19272D!important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+   background-color : #19272D!important; 
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  background-color : #19272D!important;
+}
+.navbar-default .navbar-nav > li > a{
+  background-color : #19272D!important;
+}
+}
+li a {
+	font-size :16px;
+	font-family : Montserrat,sans-serif;
+	font-weight: 450;
+}
+/*Choix du rôle register blade*/
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+/*.senior{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
+.prestataire{background-image:url(../img/prestataire.png);}*/
+
+.cc-selector input:active +.role-cc{opacity: .9;}
+.cc-selector input:checked +.role-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.role-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.role-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/*Page acceuil*/
+
+.senior_image{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+.senior_image img, .prestataire_image img{
+  padding:1px;
+  border:1px solid #021a40;
+ }
+.prestataire_image{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+
+/*Payment - form*/
+
+p .montant{
+  color :red;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#truncatetext_post {
+  height: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis 
+}
