@@ -27,13 +27,7 @@ class StoreAnnonce extends FormRequest
             'titre' => 'required|max:65',
             'contenu' => 'required|max:2000',
             'price' => 'nullable|numeric|min:0|max:99',
-            'category_id' => [
-            'required',
-            \Illuminate\validation\Rule::exists('categories', 'id')->where(function($query){
-                $query->where('usable', true);
-            })
-
-            ],
+            'category_id' => 'required',
             'tags'=> 'max:3',
         ];
     }
