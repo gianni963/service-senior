@@ -14,10 +14,10 @@ alert(p);
 		    		<img class="media-object" src="{{ asset('img/avatar/emptyavatar.png') }}" height="100" width="100">
 		  		</a>
 		  		<div class="media-body">
-		    		<h4 class="media-heading">{{$annonce->titre}}</h4>
+		    		<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small></h4>
 		          Posté par <a href="/profil/{{$annonce->user->name}}">{{ $annonce->user->name}} </a>({{$annonce->user->roles->first()->name}})
 		          
-		          <p>{!! nl2br(e($annonce->contenu)) !!}</p>
+		          <p id="truncatetext_post">{!! nl2br(e($annonce->contenu)) !!}</p>
 		          <ul class="list-inline list-unstyled">
 		  			<li><span><time>{{$annonce->created_at->diffForHumans()}}</time></span></li>
 		            <li>|</li>
