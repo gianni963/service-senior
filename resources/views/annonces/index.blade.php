@@ -25,7 +25,7 @@ alert(p);
 	  		</a>
 	  		<div class="panel-heading">
 
-				<h4 class="media-heading">{{$annonce->titre}}  @if($annonce->price) &nbsp;       <strong class="pull-right">{{$annonce->price}}&euro;/heure </strong>@endif</h4>
+				<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small>  @if($annonce->price) &nbsp;       <strong class="pull-right">{{$annonce->price}}&euro;/heure </strong>@endif</h4>
           		Posté par <a href="/profil/{{$annonce->user->name}}">  {{ $annonce->user->name}} </a>   ({{$annonce->user->roles->first()->name}})       {{$annonce->category->name}}
 
 	  		</div>

@@ -67,7 +67,7 @@ class Annonce extends Model
     public function zones()
     {
 
-        return $this->belongsto(Zone::class);
+        return $this->belongsTo('App\Zone', 'zone_id');
     }
 
      public function getTagListAttribute(){

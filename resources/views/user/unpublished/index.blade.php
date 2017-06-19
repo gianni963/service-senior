@@ -12,7 +12,7 @@
 	  		</a>
 	  	
 	  		<div class="media-body">
-	    		<h4 class="media-heading">{{$annonce->titre}} @if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
+	    		<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small>@if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
 	          <p class="text-left">Posté par {{ $annonce->user->name}}  {{$annonce->category->name}}</p>
 	          <p id="truncatetext_post">{!! nl2br(e($annonce->contenu)) !!}</p>
 	          <ul class="list-inline list-unstyled">

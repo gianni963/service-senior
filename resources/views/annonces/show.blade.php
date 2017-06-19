@@ -8,7 +8,7 @@
 		    		<img class="media-object" src="{{ asset('img/avatar/emptyavatar.png') }}" height="100" width="100">
 		  		</a>
 		  		<div class="media-body">
-			    		<h4 class="media-heading">{{$annonce->titre}} @if($annonce->price) &nbsp;  {{$annonce->price}}&euro;/heure @endif</h4>
+			    		<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small> @if($annonce->price) &nbsp;  {{$annonce->price}}&euro;/heure @endif</h4>
 			          <p class="text-left">Posté par <a href="/profil/{{$annonce->user->name}}">{{ $annonce->user->name}} </a>({{$annonce->user->roles->first()->name}}) &nbsp; &nbsp;  Catégorie : {{$annonce->category->name}}</p>
       	         	 @unless($annonce->tags->isEmpty())
 	          			<ul>

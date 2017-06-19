@@ -26,7 +26,7 @@ alert(p);
 		  		</a>
 
 		  		<div class="media-body">
-		    		<h4 class="media-heading">{{$annonce->titre}} @if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
+		    		<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small> @if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
 		          Posté par <a href="/profil/{{$annonce->user->name}}">{{ $annonce->user->name}} </a>({{$annonce->user->roles->first()->name}}) - <strong>{{$annonce->category->name}}</strong>
 		          
 		          <p id="truncatetext_post">{!! nl2br(e($annonce->contenu)) !!}</p>

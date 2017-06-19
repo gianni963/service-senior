@@ -10,7 +10,7 @@
 		      	<a class="pull-left" href="#">
 		    		<img class="media-object" src="{{ asset('img/avatar/emptyavatar.png') }}" height="100" width="100">
 		  		</a>
-		  		<h4 class="media-heading">{{$annonce->titre}} @if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
+		  		<h4 class="media-heading">{{$annonce->titre}} - <small>{{$annonce->zones->city}}</small>@if($annonce->price) &nbsp;       {{$annonce->price}}&euro;/heure @endif</h4>
 		
 		  		<div class="media-body">
 					
